@@ -15,7 +15,7 @@ class animate():
         self.current_frame = 0
         self.timer = 0.0
                 
-    def frame_forward(self, flip_x:bool= False, color: Color|list|tuple= rl.WHITE):
+    def frame_forward(self, flip_x:bool= False, color: rl.Color|list|tuple= rl.WHITE):
         # time and frame counter
         self.timer += rl.get_frame_time()
         frame_duration = 1./self.animation_fps
